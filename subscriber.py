@@ -4,7 +4,7 @@ import Adafruit_DHT as dht
 from variables import *
 
 def on_message(client, userdata, message):
-    print("message topic: ", message.topic, " - data: ", str(message.payload.decode("utf-8")))
+    print("Python: ", message.topic, " - ", str(message.payload.decode("utf-8")))
     # print("message topic = ",message.topic)
     # print("message qos = ",message.qos)
     # print("message retain flag = ",message.retain)
